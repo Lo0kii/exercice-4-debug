@@ -59,7 +59,7 @@ resource "aws_security_group" "default" {
 }
 
 resource "aws_instance" "nginx_instance" {
-  ami           = "ami-id" # Remplacez par l'ID AMI approprié
+  ami           = "ami-id" # Rajoute ton ID Ami bg
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.subnet-1.id
   vpc_security_group_ids = [aws_security_group.default.id]
@@ -68,38 +68,38 @@ resource "aws_instance" "nginx_instance" {
   }
 }
 
-resource "aws_instance" "web1" {
-  ami           = "ami-id" # Remplacez par l'ID AMI approprié
+resource "aws_instance" "VM1" {
+  ami           = "ami-id" # Rajoute ton ID Ami bg
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.subnet-1.id
   vpc_security_group_ids = [aws_security_group.default.id]
   tags = {
-    Name = "web1"
+    Name = "VM1"
   }
 }
 
-resource "aws_instance" "web2" {
-  ami           = "ami-id" # Remplacez par l'ID AMI approprié
+resource "aws_instance" "VM2" {
+  ami           = "ami-id" # Rajoute ton ID Ami bg
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.subnet-1.id
   vpc_security_group_ids = [aws_security_group.default.id]
   tags = {
-    Name = "web2"
+    Name = "VM2"
   }
 }
 
-resource "aws_instance" "web3" {
-  ami           = "ami-id" # Remplacez par l'ID AMI approprié
+resource "aws_instance" "VM3" {
+  ami           = "ami-id" # Rajoute ton ID Ami bg
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.subnet-1.id
   vpc_security_group_ids = [aws_security_group.default.id]
   tags = {
-    Name = "web3"
+    Name = "VM3"
   }
 }
 
 resource "aws_instance" "mysqldb" {
-  ami           = "ami-id" # Remplacez par l'ID AMI approprié
+  ami           = "ami-id" # Rajoute ton ID Ami bg
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.subnet-1.id
   vpc_security_group_ids = [aws_security_group.default.id]
