@@ -59,7 +59,7 @@ resource "aws_security_group" "default" {
 }
 
 resource "aws_instance" "nginx_instance" {
-  ami           = "ami-id" # Rajoute ton ID Ami bg
+  ami           = "ami-id" # Rajoute ton ID Ami pour BéBé malade
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.subnet-1.id
   vpc_security_group_ids = [aws_security_group.default.id]
@@ -69,7 +69,7 @@ resource "aws_instance" "nginx_instance" {
 }
 
 resource "aws_instance" "VM1" {
-  ami           = "ami-id" # Rajoute ton ID Ami bg
+  ami           = "ami-id" # Rajoute ton ID Ami et prend un curly
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.subnet-1.id
   vpc_security_group_ids = [aws_security_group.default.id]
@@ -79,7 +79,7 @@ resource "aws_instance" "VM1" {
 }
 
 resource "aws_instance" "VM2" {
-  ami           = "ami-id" # Rajoute ton ID Ami bg
+  ami           = "ami-id" # Rajoute ton ID Ami bonney dans one piece est mort
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.subnet-1.id
   vpc_security_group_ids = [aws_security_group.default.id]
